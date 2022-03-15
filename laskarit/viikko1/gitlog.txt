@@ -1,0 +1,114 @@
+commit 12f7403553a9b7a1c3addfad3ceba583644fb312
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 19:05:24 2022 +0200
+
+    Tiedosto file1 poistettu ja file2 uudelleennimetty
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 2c0c853267870d7181ddaefd69b06ad8a93648ea
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:57:34 2022 +0200
+
+    Lisätty kansio tiedostoja ja tiedostot file1, file2 ja file3
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1540eb560e776718c3eedfafd27f14a99c33c213
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:50:40 2022 +0200
+
+    Muokatu tiedostoita eka.txt ja kolmas.txt
+
+ eka.txt    | 2 +-
+ kolmas.txt | 6 +++++-
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+
+commit e697da182f33d5ddcc3e3fbb81ebe5d5efa7446c
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:46:35 2022 +0200
+
+    Tiedoston tiedosto.txt nimeksi muutettu eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9c52ca3dbe49198f164432b3beee4683f10d2c57
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:44:47 2022 +0200
+
+    Tiedosto toinen.txt poistettu
+
+ toinen.txt | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit a4f9c58426f11027201bed196391f8f8a5ad6e9d
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:42:21 2022 +0200
+
+    Tiedostoa tiedosto.txt muokattu
+
+ tiedosto.txt | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 127cb37c6a4dfb4f4fb01448896d3e182dc970ae
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:40:34 2022 +0200
+
+    Tiedostoon tiedosto.txt lisätty tekstiä
+
+ tiedosto.txt | 310 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 307 insertions(+), 3 deletions(-)
+
+commit a52dbfe6341742584dbf0173bffa6c1aaa3da535
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:33:19 2022 +0200
+
+    Luotu hakemisto stuff ja luotu stuff.txt tiedosto sen sisälle
+
+ stuff/stuff.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d63627284913beb4f04003a9594f1bd3ca728942
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:30:18 2022 +0200
+
+    Tiedostojen toinen.txt ja kolmas.txt sisältöä muokattu
+
+ kolmas.txt | 3 +++
+ toinen.txt | 3 +++
+ 2 files changed, 6 insertions(+)
+
+commit 53ee00bd749b6163f3f459fae8023bfba19907f9
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:27:50 2022 +0200
+
+    Tiedosto kolmas.txt lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2bc958733e29c4f43447008511709a110ae40288
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:26:06 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 3 +++
+ toinen.txt   | 0
+ 2 files changed, 3 insertions(+)
+
+commit 17f0d59cf8d645945f86bd01d13d53d70a76164e
+Author: Janne Koivurova <48507101+janneko01@users.noreply.github.com>
+Date:   Tue Mar 15 18:18:46 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+

@@ -1,4 +1,4 @@
 # Työtuntikirjanpito
 
 ## Dokumentaatio
-- Vaatimusmäärittely
+- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)

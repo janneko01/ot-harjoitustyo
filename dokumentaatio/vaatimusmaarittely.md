@@ -8,6 +8,7 @@ Käyttäjä voi käyttää sovellusta työtuntien kirjanpitoon.
 Sovelluksessa on neljä eri näkymää
 
 ![](./kuvat/kayttoliittyma-suunnitelma.png)
+[Käyttöliittymäsuunnitelma](./kuvat/kayttoliittyma-suunnitelma.png)
 
 ## Perusversion tarjoama toiminnallisuus
 - Käyttäjä voi aloittaa ja lopettaa työajan

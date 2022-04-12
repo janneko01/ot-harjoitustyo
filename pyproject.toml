@@ -8,6 +8,7 @@ authors = ["Janne Koivurova <48507101+janneko01@users.noreply.github.com>"]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
+pylint = "^2.13.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

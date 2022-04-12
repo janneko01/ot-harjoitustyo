@@ -1,7 +1,8 @@
-import imp
-
-
+from cgitb import text
 import sqlite3
 
-connection = sqlite3.connect()
-connection.row_factoy = sqlite3.Row
+db = sqlite3.connect("worktime.db")
+db.isolation_level = None
+
+db.execute("CREATE TABLE Worktime (id INTEGER PRIMARY KEY, time INTEGER, explanation TEXT")
+

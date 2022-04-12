@@ -1,11 +1,12 @@
 #laskee työaikaan käytetyn ajan ja lisää sen tietokantaan
 
 import time
+import database_connection
 
 def start():
     start = time.time()
 
-def stop():
+def stop(explanation):
     stop = time.time()
-    return stop - start
-
+    usedTime = stop - start
+    database_connection.db.execute("INSERT INTO Worktime (time, explanation) VALUES (?, ?)" [usedTime, explanation])

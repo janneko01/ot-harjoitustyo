@@ -1,3 +1,4 @@
+
 kurssit/
 └── ot2022
     └── viikko1
@@ -11,3 +12,4 @@ kurssit/
                 └── tests
                     ├── __init__.py
                     └── maksukortti_test.py
+

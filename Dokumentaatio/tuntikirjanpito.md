@@ -3,4 +3,7 @@
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
 | 15.11. | 1    | Määrittelydokumentin tekeminen|
-| 22.22. | 2    | Bingolappujen luojan tekemisen aloitus ja fpdf kirjatoon tutustuminen|
+| 22.11. | 2    | Bingolappujen luojan tekemisen aloitus ja fpdf kirjastoon tutustuminen|
+| 28.11. | 1    | Käyttöliittymä luokan tekemisen aloitus|
+| 29.11. | 3    | Poetryn korjaaminen|
+

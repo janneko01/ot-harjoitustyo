@@ -9,10 +9,13 @@ packages = [{include = "ot_harjoitustyo"}]
 [tool.poetry.dependencies]
 python = "^3.8"
 fpdf2 = "^2.6.0"
+invoke = "^1.7.3"
 
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
+pylint = "^2.15.6"
+autopep8 = "^2.0.0"
 
 [build-system]
 requires = ["poetry-core"]

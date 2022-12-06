@@ -1,19 +1,24 @@
-
 from fpdf import FPDF
 import random
+from bingo_repository import BingoRepository
+from create_pdf import CreatePdf
 
 class bingoSheets:
+    def create_bingo_numbers(self):
+        numbers = []
+        while len(numbers) < 25:
+            number = random.randint(1, 75)
+            if number in numbers:
+                continue
+            numbers.append(number)
+        BingoRepository().add("Game name", 4, numbers)
+        return numbers
 
-    def create_bingo_sheets(amount):
-        pdf = FPDF('P', 'mm', 'A4')
-        for i in amount:
-            pdf.add_page()
-            pdf.set_font('helvetica', '', 16)
-            numbers = []
-            for i in range(25):
-                number = random.randrange(1, 100)
-                numbers.append(number)
-            pdf.cell()
+    def create_bingo_sheets(self):
+        numbers = self.create_bingo_numbers()
+        pdf = CreatePdf()
+        pdf.playing_field(20, 20, 160, numbers)
+        pdf.save("bingosheets.pdf")
 
-
-        pdf.output('bingolaput.pdf')
+if __name__ == "__main__":
+    bingoSheets().create_bingo_sheets()

@@ -1,7 +1,10 @@
-import tkinter
+from tkinter import Tk
 from ui.ui import UI
 
 def main():
-    ui_view = UI()
+   ui_view = UI()
+   ui_view.start()
 
-main()
+
+if __name__=="__main__":
+    main()

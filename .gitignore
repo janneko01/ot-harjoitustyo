@@ -3,3 +3,4 @@
 htmlcov
 .DS_Store
 .code-workspace
+.pyc

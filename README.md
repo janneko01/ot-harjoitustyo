@@ -5,6 +5,29 @@ Sovelluksen avulla käyttäjä pystyy luomaan tulostettavia bingolappuja. Jokais
 
 ## Dokumentaatio
 
-[Vaatimusmäärittely](https://github.com/janneko01/ot-harjoitustyo/blob/main/Dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 
-[Työaikakirjanpito](https://github.com/janneko01/ot-harjoitustyo/blob/main/Dokumentaatio/tuntikirjanpito.md)
+[Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
+
+[Changelog](./dokumentaatio/changelog.md)
+
+
+## Asennus
+
+1. Asenna riippuvuudet komennolla:
+
+```bash
+poetry install
+```
+
+2. Suorita vaadittavat alustustoimenpiteet komennolla:
+
+```bash
+poetry run invoke build
+```
+
+3. Käynnistä sovellus komennolla:
+
+```bash
+poetry run invoke start
+```

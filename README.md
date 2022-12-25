@@ -5,11 +5,11 @@ Sovelluksen avulla käyttäjä pystyy luomaan tulostettavia bingolappuja. Jokais
 
 ## Dokumentaatio
 
-[Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/janneko01/ot-harjoitustyo/blob/main/Dokumentaatio/vaatimusmaarittely.md)
 
-[Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
+[Työaikakirjanpito](https://github.com/janneko01/ot-harjoitustyo/blob/main/Dokumentaatio/tuntikirjanpito.md)
 
-[Changelog](./dokumentaatio/changelog.md)
+[Changelog](https://github.com/janneko01/ot-harjoitustyo/blob/main/Dokumentaatio/vaatimusmaarittely.md)
 
 
 ## Asennus

@@ -1,30 +1,34 @@
 from tkinter import Tk, ttk, constants
-from bingosheets import bingoSheets
+from ui.welcome_view import WelcomeView
+# from ui.play_bingo_view import PlayBingoView
+from ui.create_bingosheets_view import CreateBingosheetsView
 
 class UI:
     def __init__(self, root):
         self._root = root
+        self._current_view = None
 
     def start(self):
-        label = ttk.Label(master=self._root, text="Tervetuloa bingoon!")
-        pelaa = ttk.Button(master=self._root, text="Pelaa nyt")
-        luo = ttk.Button(
-            master=self._root,
-            text="Luo bingolappuja",
-            command=self._handle_button_click
-            )
+        self._show_welcome_view()
 
-        label.pack(side=constants.TOP)
-        pelaa.pack(side=constants.LEFT)
-        luo.pack(side=constants.LEFT)
+    def _hide_current_view(self):
+        if self._current_view:
+            self._current_view.destroy()
 
-    def _handle_button_click(self):
-        bingoSheets().create_bingo_sheets()
+        self._current_view = None
 
-window = Tk()
-window.title("Bingo")
+    def _show_welcome_view(self):
+        self._hide_current_view()
+        self._current_view = WelcomeView(self._root, self._show_create_bingo_sheets_view)
+        self._current_view.pack()
 
-ui = UI(window)
-ui.start()
+    # def _show_play_bingo_view(self):
+    #     self._hide_current_view()
+    #     self._current_view = PlayBingoView()
+    #     self._current_view.pack()
 
-window.mainloop()
+    def _show_create_bingo_sheets_view(self):
+        self._hide_current_view()
+        self._current_view = CreateBingosheetsView(self._root, self._show_welcome_view)
+        self._current_view.pack()
+

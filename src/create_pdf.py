@@ -3,7 +3,6 @@ from fpdf import FPDF
 class CreatePdf:
     def __init__(self) -> None:
         self.document = FPDF()
-        self.document.add_page()
         self.document.set_font('Helvetica', 'b', 28)
 
     def square(self, x1, y1, size, value=''):
@@ -14,6 +13,7 @@ class CreatePdf:
         self.document.text(x1+8, y1+17, str(value))
 
     def playing_field(self, x, y, size, numbers):
+        self.document.add_page()
         self.square(x, y, size)
         for i in range(x, x+size, size//5):
             for j in range(y, y+size, size//5):

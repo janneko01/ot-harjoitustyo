@@ -2,9 +2,13 @@ from tkinter import Tk
 from ui.ui import UI
 
 def main():
-   ui_view = UI()
+   window = Tk()
+   window.title("Bingo")
+   window.geometry("800x500")
+   ui_view = UI(window)
    ui_view.start()
 
+   window.mainloop()
 
 if __name__=="__main__":
     main()

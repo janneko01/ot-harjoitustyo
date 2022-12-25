@@ -11,3 +11,9 @@ class BingoRepository:
         cursor.execute("insert into sheets values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", data)
             
         self._connection.commit()
+
+    def get_by_game_name(self, game_name):
+        cursor = self._connection.cursor()
+        cursor.execute("select * from sheets where game_name = ?", (game_name))
+        sheets = cursor.fetchall()
+        return sheets

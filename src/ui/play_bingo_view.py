@@ -20,6 +20,9 @@ class PlayBingoView:
 
     def _draw(self):
         sheet, number = self._play.next_number()
+        if number < 1:
+            self.value_number["state"] = DISABLED
+            return
         if sheet:
             self.value_number["state"] = DISABLED
             self._winner.set("Voitto kupongissa " + str(sheet + 1))
@@ -47,7 +50,7 @@ class PlayBingoView:
             command=self._draw
         )
         self._winner = StringVar()
-        winner_label = ttk.Label(self._frame, textvariable=self._winner)
+        winner_label = ttk.Label(self._frame, textvariable=self._winner, font='Helvetica 18 bold')
 
         back_button.pack()
         winner_label.pack()

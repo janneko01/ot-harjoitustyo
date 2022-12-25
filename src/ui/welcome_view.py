@@ -1,8 +1,9 @@
 from tkinter import ttk, constants, StringVar
 from bingo_repository import BingoRepository
 
+
 class WelcomeView:
-    def __init__ (self, root, show_create_bingo_sheets_view, show_play_bingo_view):
+    def __init__(self, root, show_create_bingo_sheets_view, show_play_bingo_view):
         self._root = root
         self.show_create_bingo_sheets_view = show_create_bingo_sheets_view
         self.show_play_bingo_view = show_play_bingo_view
@@ -38,4 +39,3 @@ class WelcomeView:
         game_select.grid(padx=5, pady=5, sticky=constants.NW)
         play_now_button.grid(padx=5, pady=5, sticky=constants.NE)
         create_bingo_sheets_button.grid(padx=5, pady=5, sticky=constants.NW)
-

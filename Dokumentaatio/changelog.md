@@ -13,3 +13,8 @@
 
 - Graafista käyttöliittymää laajennettu
 - Bingolappuja pystyy luomaan graafisen käyttöliittymän kautta
+
+## Viikko 7
+- Graafinen käyttöliittymä viimeistelty
+- Bingon pelaaminen tehty mahdolliseksi
+- Aloitusnäkymä, jossa pystyy valitsemaan halutun pelin

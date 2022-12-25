@@ -9,5 +9,10 @@
 | 4.12. | 3    | Tietokannan lisääminen|
 | 5.12. | 3    | Bingolappujen luojan tekeminen|
 | 6.12. | 4    | PDF:fän luojan tekeminen|
-
+| 21.12. | 2    | PDF:fän luojan tekeminen|
+| 22.12. | 2    | PDF:fän luojan tekeminen|
+| 24.12. | 4    | Käyttöliittymän tekeminen|
+| 25.12. | 5    | Käyttöliittymän tekeminen|
+| 25.12. | 5    | Bingon pelaamisen saaminen tominvaksi|
+| 25.12. | 1    | Dokumentaatio|
 

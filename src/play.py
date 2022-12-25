@@ -1,6 +1,7 @@
 from bingo_repository import BingoRepository
 import random
 
+
 class Play:
     def __init__(self):
         self.numbers = []

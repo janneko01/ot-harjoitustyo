@@ -1,8 +1,9 @@
 from tkinter import ttk, constants, StringVar, DISABLED
 from bingo_repository import BingoRepository
 
+
 class PlayBingoView:
-    def __init__ (self, root, play, game_name, show_welcome_view):
+    def __init__(self, root, play, game_name, show_welcome_view):
         self._root = root
         self._play = play
         self.game_name = game_name
@@ -52,4 +53,3 @@ class PlayBingoView:
         winner_label.grid(padx=5, pady=5, sticky=constants.NW)
         numbers_label.grid(padx=5, pady=5, sticky=constants.NW)
         self.value_number.grid(padx=5, pady=5, sticky=constants.NW)
-

@@ -2,8 +2,9 @@ from tkinter import ttk, constants
 from bingosheets import bingoSheets
 from bingo_repository import BingoRepository
 
+
 class CreateBingosheetsView:
-    def __init__ (self, root, show_welcome_view):
+    def __init__(self, root, show_welcome_view):
         self._root = root
         self.show_welcome_view = show_welcome_view
         self._frame = None
@@ -18,7 +19,7 @@ class CreateBingosheetsView:
     def _create_sheets(self):
         name = self.game_name_entry.get()
         if name in BingoRepository().get_game_names():
-            pass # Virheen käsittely
+            pass  # Virheen käsittely
         amount = int(self.amount_entry.get())
         bingoSheets().create_bingo_sheets(name, amount)
 
@@ -28,7 +29,8 @@ class CreateBingosheetsView:
         game_name_label = ttk.Label(master=self._frame, text="Pelin nimi:")
         self.game_name_entry = ttk.Entry(master=self._frame)
 
-        amount_label = ttk.Label(master=self._frame, text="Bingolappujen määrä:")
+        amount_label = ttk.Label(
+            master=self._frame, text="Bingolappujen määrä:")
         self.amount_entry = ttk.Entry(master=self._frame)
 
         create_bingo_sheets_button = ttk.Button(

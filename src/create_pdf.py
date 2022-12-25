@@ -1,5 +1,6 @@
 from fpdf import FPDF
 
+
 class CreatePdf:
     def __init__(self) -> None:
         self.document = FPDF()
@@ -27,5 +28,5 @@ class CreatePdf:
 
 if __name__ == '__main__':
     p = CreatePdf()
-    p.playing_field(20, 20, 160, [x for x in range(1,26)])
+    p.playing_field(20, 20, 160, [x for x in range(1, 26)])
     p.save('bingosheets.pdf')

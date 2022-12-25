@@ -3,6 +3,7 @@ import random
 from bingo_repository import BingoRepository
 from create_pdf import CreatePdf
 
+
 class bingoSheets:
     def create_bingo_numbers(self, name, id):
         numbers = []
@@ -20,6 +21,7 @@ class bingoSheets:
             numbers = self.create_bingo_numbers(name, i)
             pdf.playing_field(name, i+1, 20, 20, 160, numbers)
         pdf.save("bingosheets.pdf")
+
 
 if __name__ == "__main__":
     bingoSheets().create_bingo_sheets(4)

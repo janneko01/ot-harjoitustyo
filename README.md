@@ -31,3 +31,29 @@ poetry run invoke build
 ```bash
 poetry run invoke start
 ```
+
+## Komentorivitoiminnot
+
+### Testaus
+
+Testit voi suorittaa komennolla:
+
+```bash
+poetry run invoke test
+```
+
+### Testikattavuus
+
+Testikattavuusraportin voi luoda komennolla:
+
+```bash
+poetry run invoke coverage-report
+```
+
+### Pylint
+
+Tiedoston .pylintrc tarkistukset voi suorittaa komennolla:
+
+```bash
+poetry run invoke lint
+```

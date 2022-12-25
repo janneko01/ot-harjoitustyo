@@ -12,12 +12,14 @@ class CreatePdf:
         self.document.line(x1, y1+size, x1+size, y1+size)
         self.document.text(x1+8, y1+17, str(value))
 
-    def playing_field(self, x, y, size, numbers):
+    def playing_field(self, name, id, x, y, size, numbers):
         self.document.add_page()
         self.square(x, y, size)
         for i in range(x, x+size, size//5):
             for j in range(y, y+size, size//5):
                 self.square(j+3, i+3, size//5-6, numbers.pop(0))
+        self.document.text(80, 250, f"Peli: {name}")
+        self.document.text(80, 270, f"Id: {id}")
 
     def save(self, filename):
         self.document.output(filename)

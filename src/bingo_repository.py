@@ -14,6 +14,13 @@ class BingoRepository:
 
     def get_by_game_name(self, game_name):
         cursor = self._connection.cursor()
-        cursor.execute("select * from sheets where game_name = ?", (game_name))
+        cursor.execute("select * from sheets where game_name = ?", (game_name,))
         sheets = cursor.fetchall()
         return sheets
+
+    def get_game_names(self):
+        cursor = self._connection.cursor()
+        cursor.execute("select distinct game_name from sheets")
+        names = cursor.fetchall()
+        names = [row[0] for row in names]
+        return names

@@ -49,7 +49,7 @@ class PlayBingoView:
         self._winner = StringVar()
         winner_label = ttk.Label(self._frame, textvariable=self._winner)
 
-        back_button.grid(padx=5, pady=5, sticky=constants.NW)
-        winner_label.grid(padx=5, pady=5, sticky=constants.NW)
-        numbers_label.grid(padx=5, pady=5, sticky=constants.NW)
-        self.value_number.grid(padx=5, pady=5, sticky=constants.NW)
+        back_button.pack()
+        winner_label.pack()
+        numbers_label.pack()
+        self.value_number.pack()

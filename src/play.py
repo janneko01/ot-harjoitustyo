@@ -29,7 +29,6 @@ class Play:
                     if sheet[2 + 5*i + j] in self.numbers:
                         oikein += 1
                 if oikein > 4:
-                    h = [str(column) for column in sheet]
                     return sheet[1]
 
             # Pystysuorat tarkastukset
@@ -39,25 +38,22 @@ class Play:
                     if sheet[2 + 5*j + i] in self.numbers:
                         oikein += 1
                 if oikein > 4:
-                    h = [str(column) for column in sheet]
                     return sheet[1]
 
-            # Vino ylös tarkastukset
+            # Vino alas tarkastukset
             oikein = 0
             for i in range(5):
                 if sheet[2 + 5*i + i] in self.numbers:
                     oikein += 1
             if oikein > 4:
-                h = [str(column) for column in sheet]
                 return sheet[1]
 
-            # Vino alas tarkastukset
+            # Vino ylös tarkastukset
             oikein = 0
             for i in range(5):
                 if sheet[2 + 5*i + (4-i)] in self.numbers:
                     oikein += 1
             if oikein > 4:
-                h = [str(column) for column in sheet]
                 return sheet[1]
 
         return None

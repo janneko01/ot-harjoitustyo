@@ -1,4 +1,4 @@
-from tkinter import ttk, constants, StringVar
+from tkinter import ttk, constants, StringVar, DISABLED
 from bingo_repository import BingoRepository
 
 
@@ -20,8 +20,13 @@ class WelcomeView:
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
 
+        welcome_label = ttk.Label(master=self._frame, text="Tervetuloa Bingoon!", font="Helvetica 18 bold")
+
+        select_game_label = ttk.Label(master=self._frame, text="Valitse peli:")
+
         self.variable = StringVar(self._frame)
-        self.variable.set(self.games[0])
+        if self.games:
+            self.variable.set(self.games[0])
         game_select = ttk.OptionMenu(self._frame, self.variable, *self.games)
 
         play_now_button = ttk.Button(
@@ -30,12 +35,16 @@ class WelcomeView:
             command=self.show_play_bingo_view
         )
 
+        if not self.games:
+            play_now_button["state"] = DISABLED
+
         create_bingo_sheets_button = ttk.Button(
             master=self._frame,
             text="Luo bingolappuja",
             command=self.show_create_bingo_sheets_view
         )
-
+        welcome_label.grid(padx=5, pady=5, sticky=constants.NW)
+        select_game_label.grid(padx=5, pady=5, sticky=constants.NW)
         game_select.grid(padx=5, pady=5, sticky=constants.NW)
-        play_now_button.grid(padx=5, pady=5, sticky=constants.NE)
+        play_now_button.grid(padx=5, pady=5, sticky=constants.NW)
         create_bingo_sheets_button.grid(padx=5, pady=5, sticky=constants.NW)

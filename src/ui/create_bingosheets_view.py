@@ -1,6 +1,8 @@
 from tkinter import ttk, constants
 from bingosheets import bingoSheets
 from bingo_repository import BingoRepository
+import os
+import sys
 
 
 class CreateBingosheetsView:
@@ -18,10 +20,12 @@ class CreateBingosheetsView:
 
     def _create_sheets(self):
         name = self.game_name_entry.get()
-        if name in BingoRepository().get_game_names():
-            pass  # Virheen käsittely
         amount = int(self.amount_entry.get())
         bingoSheets().create_bingo_sheets(name, amount)
+        if sys.platform.startswith("linux"):
+            os.system("xdg-open bingosheets.pdf")
+        elif sys.platform.startswith("darwin"):
+            os.system("open bingosheets.pdf")
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)

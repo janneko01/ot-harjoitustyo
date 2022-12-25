@@ -7,11 +7,11 @@ class Play:
         self.sheets = None
 
     def start_game(self, game_name):
+        self.numbers = []
         self.sheets = BingoRepository().get_by_game_name(game_name)
 
     def draw_number(self):
         if len(self.numbers) >= 75:
-            print("MAHDOTONTA")
             return -1
         while True:
             number = random.randint(1, 75)
@@ -29,7 +29,6 @@ class Play:
                         oikein += 1
                 if oikein > 4:
                     h = [str(column) for column in sheet]
-                    print("Vaaka", i, h)
                     return sheet[1]
 
             # Pystysuorat tarkastukset
@@ -40,7 +39,6 @@ class Play:
                         oikein += 1
                 if oikein > 4:
                     h = [str(column) for column in sheet]
-                    print("Pysty", i, h)
                     return sheet[1]
 
             # Vino ylös tarkastukset
@@ -50,7 +48,6 @@ class Play:
                     oikein += 1
             if oikein > 4:
                 h = [str(column) for column in sheet]
-                print("Vino ylös", h)
                 return sheet[1]
 
             # Vino alas tarkastukset
@@ -60,7 +57,6 @@ class Play:
                     oikein += 1
             if oikein > 4:
                 h = [str(column) for column in sheet]
-                print("Vino alas", h)
                 return sheet[1]
 
         return None

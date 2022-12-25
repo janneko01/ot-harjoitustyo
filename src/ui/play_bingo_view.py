@@ -19,10 +19,9 @@ class PlayBingoView:
 
     def _draw(self):
         sheet, number = self._play.next_number()
-        print(sheet, number)
         if sheet:
             self.value_number["state"] = DISABLED
-        print('JUU', type(self._numbers.get()))
+            self._winner.set("Voitto kupongissa " + str(sheet + 1))
         n = self._numbers.get()
         if len(n) > 0:
             n += ', '
@@ -46,9 +45,11 @@ class PlayBingoView:
             text="Arvo numero",
             command=self._draw
         )
+        self._winner = StringVar()
+        winner_label = ttk.Label(self._frame, textvariable=self._winner)
 
         back_button.grid(padx=5, pady=5, sticky=constants.NW)
-
+        winner_label.grid(padx=5, pady=5, sticky=constants.NW)
         numbers_label.grid(padx=5, pady=5, sticky=constants.NW)
         self.value_number.grid(padx=5, pady=5, sticky=constants.NW)
 
